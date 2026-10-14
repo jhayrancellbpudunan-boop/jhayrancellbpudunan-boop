@@ -1,0 +1,48 @@
+{
+    "name": "Jhay Rancell B. Pudunan",
+    "tagline": "Aspiring Networking",
+    "introduction": "I am an IT student interested in web development and useful digital solutions.",
+    "profileImage": "images/profile.jpg",
+    "about": {
+    "biography": "I enjoy learning programming, exploring technology, and developing practical applications.",
+    "school": "Example State University",
+    "program": "Bachelor of Science in Information Technology",
+    "graduation": "Expected graduation: 2028",
+    "careerGoal": "To become a professional software developer.",
+    "interests": "Web development, databases, UI design, and problem solving."
+    },
+    "skills": ["HTML", "CSS", "JavaScript", "Java", "MySQL", "Problem Solving"],
+    "projects": [
+    {
+    "title": "Student Record System",
+    "description": "An application for organizing student records and academic information.",
+    "technologies": "Java, MySQL",
+    "role": "Designed the interface and developed record management features.",
+    "image": "images/project1.jpg",
+    "link": "https://github.com/yourusername/student-record-system"
+    },
+    {
+    "title": "Personal Portfolio",
+    "description": "A responsive website presenting my profile, skills, and academic work.",
+    "technologies": "HTML, CSS, JavaScript",
+    "role": "Designed and developed the website.",
+    "image": "images/project2.jpg",
+    "link": "https://github.com/yourusername/student-portfolio"
+    },
+    {
+    "title": "Inventory Management System",
+    "description": "A prototype for recording items and monitoring stock.",
+    "technologies": "Java, MySQL",
+    "role": "Developed inventory functions as part of a student team.",
+    "image": "images/project3.jpg",
+    "link": "https://github.com/yourusername/inventory-system"
+    }
+    ],
+    "githubUsername": "yourusername",
+    "contact": {
+    "email": "jhayrancell@gmail.com",
+    "location": "Nueva Vizcaya, Philippines",
+    "linkedin": "https://www.linkedin.com/"
+    }
+   }
+   
