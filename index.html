@@ -1,100 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Student portfolio showcasing skills, projects, and achievements.">
- <title>Jhay Rancell's Portfolio</title>
- <link rel="stylesheet" href="css/style.css">
- <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhay Rancell | Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header class="site-header">
- <nav class="navbar">
- <a class="logo" href="#home">MyPortfolio</a>
- <ul class="nav-links">
- <li><a href="#home">Home</a></li>
- <li><a href="#about">About</a></li>
- <li><a href="#skills">Skills</a></li>
- <li><a href="#projects">Projects</a></li>
- <li><a href="#contact">Contact</a></li>
- </ul>
- </nav>
- </header>
- <main>
- <section id="home" class="hero">
- <div class="hero-content">
- <p class="eyebrow">STUDENT PORTFOLIO</p>
- <h1>Hello, I'm <span id="studentName">Jhay Rancell</span></h1>
- <h2 id="tagline">Aspiring NETWORKING</h2>
- <p id="introduction">I enjoy learning technology and building useful applications.</p>
- <div class="hero-actions">
- <a class="btn" href="#projects">View My Projects</a>
- <a class="btn btn-outline" href="#contact">Contact Me</a>
- </div>
- </div>
- <div class="profile-container">
- <img id="profileImage" src="images/received_2574428719696621.jpg" alt="Student profile photo">
- </div>
- </section>
- <section id="about" class="section">
- <h2 class="section-title">About Me</h2>
- <div class="about-content">
- <p id="biography"></p>
- <div class="information-card">
- <h3>Educational Background</h3>
- <p id="education"></p>
- <p id="graduation"></p>
- <h3>Career Goal</h3>
- <p id="careerGoal"></p>
- <h3>Interests</h3>
- <p id="interests"></p>
- </div>
- </div>
- </section>
- <section id="skills" class="section alternate">
-    <h2 class="section-title">My Skills</h2>
-    <p class="section-description">Technologies and competencies I continue to develop.</p>
-    <div id="skillsContainer" class="skills-grid">Loading skills...</div>
-    </section>
-    <section id="projects" class="section">
-    <h2 class="section-title">My Projects</h2>
-    <p class="section-description">Academic and personal projects I have worked on.</p>
-    <div id="projectsMessage" class="status-message" aria-live="polite"></div>
-    <div id="projectsContainer" class="projects-grid"></div>
-    <div class="github-section">
-    <h3>Latest GitHub Repositories</h3>
-    <p class="section-description">My five most recently updated public repositories.</p>
-    <div id="githubMessage" class="status-message" aria-live="polite"></div>
-    <ul id="githubRepos" class="repository-list"></ul>
-    <a id="githubProfile" class="text-link" href="https://github.com/"
-    target="_blank" rel="noopener noreferrer">Visit My GitHub Profile</a>
-    </div>
-    </section>
-    <section id="contact" class="section alternate">
-    <h2 class="section-title">Contact Me</h2>
-    <p class="section-description">Contact me about collaboration, projects, or opportunities.</p>
-    <div class="contact-details">
-    <p>Email: <a id="contactEmail" href="mailto:jhayrancell@gmail.com">jhayrancell@gmail.com</a></p>
-    <p id="contactLocation"></p>
-    <p><a id="linkedinLink" href="https://www.linkedin.com/"
-    target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
-    </div>
-    <form id="contactForm" class="contact-form">
-    <label for="visitorName">Your Name</label>
-    <input type="text" id="visitorName" name="visitorName" required minlength="2">
-    <label for="visitorEmail">Your Email</label>
-    <input type="email" id="visitorEmail" name="visitorEmail" required>
-    <label for="visitorMessage">Your Message</label>
-    <textarea id="visitorMessage" name="visitorMessage" rows="5" required
-   minlength="10"></textarea>
-    <button type="submit" class="btn">Submit Message</button>
-    <p id="formFeedback" role="status" aria-live="polite"></p>
-    </form>
-    </section>
+    <header class="topbar">
+        <a href="#" class="brand">🍁 Jhay's Portfolio</a>
+
+        <div class="controls">
+            <button id="themeBtn">☾ Dark Mode</button>
+            <button id="pdfBtn">▣ Save PDF</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero card">
+            <div class="hero-info">
+                <span class="tag">BS INFORMATION TECHNOLOGY</span>
+                <h1 id="studentName">Loading...</h1>
+                <p id="course"></p>
+                <p id="location">📍 Bambang, Nueva Vizcaya</p>
+                <p id="email"></p>
+                <p id="phone"></p>
+
+                <div class="hero-buttons">
+                    <label class="button" for="photoInput">📸 Choose a Photo</label>
+                    <input type="file" id="photoInput"
+                           accept="image/*" hidden>
+                    <a href="#about" class="button secondary">About Me ↓</a>
+                </div>
+            </div>
+
+            <div class="profile-frame">
+                <img id="profilePhoto"
+                     src="https://placehold.co/300x300/fce7d1/8b4513?text=Your+Photo"
+                     alt="Profile photo">
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div class="card mini-card">
+                <span>◷ Live Time</span>
+                <h2 id="liveTime">--:--:--</h2>
+                <p>Bambang, Nueva Vizcaya</p>
+            </div>
+
+            <div class="card mini-card">
+                <span>▦ Date</span>
+                <h2 id="liveDate">October 15, 2026</h2>
+                <p id="weekday">THURSDAY</p>
+            </div>
+
+            <div class="card mini-card theme-card">
+                <span>✿ Theme</span>
+                <h2>ORANGE</h2>
+                <p>Creativity • Energy • Enthusiasm</p>
+            </div>
+        </section>
+
+        <section id="about" class="card section">
+            <h2>🍁 About Me</h2>
+            <p id="aboutText"></p>
+        </section>
+
+        <section class="card section">
+            <h2>🎓 Education</h2>
+            <div id="educationList" class="timeline"></div>
+        </section>
+
+        <section class="card section">
+            <h2>📸 Photo of Me</h2>
+            <p class="muted">
+                Choose your own picture using the photo upload button
+                above. Your selected picture will appear in both photo
+                areas.
+            </p>
+            <img id="aboutPhoto"
+                 class="about-photo"
+                 src="https://placehold.co/500x300/fce7d1/8b4513?text=Your+Photo"
+                 alt="Your uploaded photo">
+        </section>
+
+        <section class="card section">
+            <h2>💼 Experience & Projects</h2>
+            <div id="projectsList" class="project-grid"></div>
+        </section>
+
+        <section class="card section">
+            <h2>✨ Skills & Interests</h2>
+            <div id="skillsList" class="skills-list"></div>
+        </section>
+
+        <section class="card contact-section">
+            <h2>☎️ Let's Connect</h2>
+            <p>Feel free to contact me for school projects and collaboration.</p>
+            <a id="contactLink" class="button" href="mailto:jhayrancell@gmail.com">
+                ✉️ Send Me an Email
+            </a>
+        </section>
     </main>
-    <footer><p id="footerText">&copy; 2026 My Student Portfolio</p></footer>
-    <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑ Top</button>
-   </body>
-   </html>
-   
+
+    <footer>
+        <p>Made with 🍁 by <span id="footerName">Jhay Rancell</span></p>
+        <p>Personal Student Portfolio • 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
