@@ -1,48 +1,43 @@
+
 {
-    "name": "Jhay Rancell B. Pudunan",
-    "tagline": "Aspiring Networking",
-    "introduction": "I am an IT student interested in web development and useful digital solutions.",
-    "profileImage": "images/profile.jpg",
-    "about": {
-    "biography": "I enjoy learning programming, exploring technology, and developing practical applications.",
-    "school": "Example State University",
-    "program": "Bachelor of Science in Information Technology",
-    "graduation": "Expected graduation: 2028",
-    "careerGoal": "To become a professional software developer.",
-    "interests": "Web development, databases, UI design, and problem solving."
-    },
-    "skills": ["HTML", "CSS", "JavaScript", "Java", "MySQL", "Problem Solving"],
-    "projects": [
+  "name": "Jhay Rancell B. Pudunan",
+  "course": "BS Information Technology • NVSU Bambang",
+  "location": "Aliaga, Nueva Vizcaya",
+  "displayLocation": "Bambang, Nueva Vizcaya",
+  "email": "jhayrancell@gmail.com",
+  "phone": "+63 9612930807",
+  "about": "Hello! I am Jhay Rancell B. Pudunan, a student who enjoys learning new things, exploring technology, and improving my skills. I am interested in designing, creating websites, and working with computers.",
+  "education": [
     {
-    "title": "Student Record System",
-    "description": "An application for organizing student records and academic information.",
-    "technologies": "Java, MySQL",
-    "role": "Designed the interface and developed record management features.",
-    "image": "images/project1.jpg",
-    "link": "https://github.com/yourusername/student-record-system"
+      "level": "Elementary",
+      "school": "Bambang Central School"
     },
     {
-    "title": "Personal Portfolio",
-    "description": "A responsive website presenting my profile, skills, and academic work.",
-    "technologies": "HTML, CSS, JavaScript",
-    "role": "Designed and developed the website.",
-    "image": "images/project2.jpg",
-    "link": "https://github.com/yourusername/student-portfolio"
+      "level": "Secondary",
+      "school": "Bambang High National High School"
     },
     {
-    "title": "Inventory Management System",
-    "description": "A prototype for recording items and monitoring stock.",
-    "technologies": "Java, MySQL",
-    "role": "Developed inventory functions as part of a student team.",
-    "image": "images/project3.jpg",
-    "link": "https://github.com/yourusername/inventory-system"
+      "level": "Tertiary",
+      "school": "Nueva Vizcaya State University",
+      "course": "Bachelor of Science in Information Technology"
     }
-    ],
-    "githubUsername": "yourusername",
-    "contact": {
-    "email": "jhayrancell@gmail.com",
-    "location": "Nueva Vizcaya, Philippines",
-    "linkedin": "https://www.linkedin.com/"
+  ],
+  "projects": [
+    {
+      "title": "Experience or Part-time Work",
+      "description": "Describe your work experience, responsibilities, tasks, and the skills you learned."
+    },
+    {
+      "title": "School Project",
+      "description": "Describe a school project, group activity, or website you created and explain what you contributed."
     }
-   }
-   
+  ],
+  "skills": [
+    "HTML & CSS",
+    "Java",
+    "Database",
+    "Teamwork",
+    "Communication",
+    "Creative Design"
+  ]
+}
