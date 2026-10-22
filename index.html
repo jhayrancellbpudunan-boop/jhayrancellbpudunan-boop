@@ -2,113 +2,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhay Rancell | Student Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15120f">
+  <title>Jhay Rancell Pudunan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="topbar">
-        <a href="#" class="brand">🍁 Jhay's Portfolio</a>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-        <div class="controls">
-            <button id="themeBtn">☾ Dark Mode</button>
-            <button id="pdfBtn">▣ Save PDF</button>
+  <header class="topbar wrap">
+    <a class="brand" href="#home">
+      <span class="brand-mark">🍁</span>
+      <span>JRP<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </nav>
+
+    <div class="top-actions">
+      <button id="themeToggle" class="icon-button"
+        aria-label="Switch color theme">☼</button>
+      <button id="pdfButton" class="button button-small">
+        ↓ <span>Save PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap" id="home">
+
+    <section class="hero panel">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          STUDENT PORTFOLIO
+          <span class="eyebrow-line"></span> 2026
         </div>
-    </header>
 
-    <main class="container">
-        <section class="hero card">
-            <div class="hero-info">
-                <span class="tag">BS INFORMATION TECHNOLOGY</span>
-                <h1 id="studentName">Loading...</h1>
-                <p id="course"></p>
-                <p id="location">📍 Bambang, Nueva Vizcaya</p>
-                <p id="email"></p>
-                <p id="phone"></p>
+        <h1>Hi, I'm <span class="orange-text">Jhay Rancell.</span></h1>
 
-                <div class="hero-buttons">
-                    <label class="button" for="photoInput">📸 Choose a Photo</label>
-                    <input type="file" id="photoInput"
-                           accept="image/*" hidden>
-                    <a href="#about" class="button secondary">About Me ↓</a>
-                </div>
+        <p class="hero-subtitle">
+          Aspiring IT professional <span class="slash">/</span>
+          Creative learner <span class="slash">/</span>
+          Future builder
+        </p>
+
+        <p class="hero-description">
+          I enjoy learning new things, exploring technology,
+          and turning ideas into useful digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button" href="#about">
+            Get to know me <span>↗</span>
+          </a>
+          <a class="text-link" href="mailto:jhayrancell@gmail.com">
+            Let's connect <span>→</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>⌖ Aliaga, Nueva Vizcaya</span>
+          <span>✉ jhayrancell@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="profile-wrap">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="profile-card">
+          <div class="profile-top">
+            <span>PROFILE_001</span>
+            <span class="live-label">
+              <span class="status-dot"></span>
+              AVAILABLE TO LEARN
+            </span>
+          </div>
+
+          <div class="avatar-frame">
+            <img id="profileImage"
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=700&q=85"
+              alt="Profile photo">
+
+            <label class="photo-edit" for="photoInput"
+              title="Choose your photo">＋</label>
+            <input id="photoInput" type="file"
+              accept="image/*" hidden>
+          </div>
+
+          <div class="profile-name">
+            <h2 id="fullName">Jhay Rancell B. Pudunan</h2>
+            <p>BS Information Technology</p>
+          </div>
+
+          <div class="profile-bottom">
+            <span>NV State University</span>
+            <span class="profile-star">✳</span>
+          </div>
+        </div>
+
+        <div class="floating-tag tag-top">
+          ✦ <span>Curious by nature</span>
+        </div>
+
+        <div class="floating-tag tag-bottom">
+          <span class="tag-icon">⌘</span>
+          <span>Building my future<br>
+            <b>one skill at a time</b>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
+
+    <section class="info-strip">
+      <div>
+        <span class="strip-icon">◷</span>
+        <span class="strip-label">LOCAL TIME</span>
+        <strong id="liveTime">Loading...</strong>
+        <small id="liveDate">Loading date...</small>
+      </div>
+
+      <div>
+        <span class="strip-icon">⌖</span>
+        <span class="strip-label">BASED IN</span>
+        <strong>Bambang, Nueva Vizcaya</strong>
+        <small>Philippines · GMT+8</small>
+      </div>
+
+      <div>
+        <span class="strip-icon">✳</span>
+        <span class="strip-label">CURRENT FOCUS</span>
+        <strong>Information Technology</strong>
+        <small>Learning · Creating · Growing</small>
+      </div>
+    </section>
+
+    <section class="content-grid" id="about">
+      <article class="panel section-card about-card">
+        <div class="section-heading">
+          <span class="section-number">01 / ABOUT</span>
+          <span class="section-symbol">↗</span>
+        </div>
+
+        <h2>A little <span class="orange-text">about me.</span></h2>
+
+        <p class="body-copy">
+          Hello! I am Jhay Rancell B. Pudunan, a student who enjoys
+          learning new things, exploring technology, and improving
+          my skills. I am interested in designing, creating websites,
+          and working with computers.
+        </p>
+
+        <p class="body-copy">
+          My goal is to keep growing as an IT student, gain practical
+          experience, and use technology to create things that are
+          helpful and meaningful.
+        </p>
+
+        <div class="contact-list">
+          <a href="tel:+639612930807">
+            <span class="contact-icon">☎</span>
+            <span><small>PHONE</small>+63 961 293 0807</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a href="mailto:jhayrancell@gmail.com">
+            <span class="contact-icon">✉</span>
+            <span><small>EMAIL</small>jhayrancell@gmail.com</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="panel section-card education-card" id="education">
+        <div class="section-heading">
+          <span class="section-number">02 / EDUCATION</span>
+          <span class="section-symbol">⌁</span>
+        </div>
+
+        <h2>My learning <span class="orange-text">journey.</span></h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div>
+              <small>ELEMENTARY</small>
+              <h3>Bambang Central School</h3>
+              <p>Building the foundations</p>
             </div>
+            <span class="timeline-arrow">↗</span>
+          </div>
 
-            <div class="profile-frame">
-                <img id="profilePhoto"
-                     src="received_2574428719696621.jpg"
-                     alt="Profile photo">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div>
+              <small>SECONDARY</small>
+              <h3>Bambang High National High School</h3>
+              <p>Growing knowledge and confidence</p>
             </div>
-        </section>
+            <span class="timeline-arrow">↗</span>
+          </div>
 
-        <section class="info-grid">
-            <div class="card mini-card">
-                <span>◷ Live Time</span>
-                <h2 id="liveTime">--:--:--</h2>
-                <p>Bambang, Nueva Vizcaya</p>
+          <div class="timeline-item current">
+            <span class="timeline-dot"></span>
+            <div>
+              <small>TERTIARY · CURRENT</small>
+              <h3>Nueva Vizcaya State University</h3>
+              <p>Bachelor of Science in Information Technology</p>
             </div>
+            <span class="timeline-arrow">↗</span>
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <div class="card mini-card">
-                <span>▦ Date</span>
-                <h2 id="liveDate">October 15, 2026</h2>
-                <p id="weekday">THURSDAY</p>
-            </div>
+    <section class="content-grid lower-grid" id="experience">
+      <article class="panel section-card experience-card">
+        <div class="section-heading">
+          <span class="section-number">03 / EXPERIENCE</span>
+          <span class="section-symbol">✳</span>
+        </div>
 
-            <div class="card mini-card theme-card">
-                <span>✿ Theme</span>
-                <h2>ORANGE</h2>
-                <p>Creativity • Energy • Enthusiasm</p>
-            </div>
-        </section>
+        <h2>Learning by <span class="orange-text">doing.</span></h2>
 
-        <section id="about" class="card section">
-            <h2>🍁 About Me</h2>
-            <p id="aboutText"></p>
-        </section>
-
-        <section class="card section">
-            <h2>🎓 Education</h2>
-            <div id="educationList" class="timeline"></div>
-        </section>
-
-        <section class="card section">
-            <h2>📸 Photo of Me</h2>
-            <p class="muted">
-                Choose your own picture using the photo upload button
-                above. Your selected picture will appear in both photo
-                areas.
+        <div class="experience-block">
+          <div class="experience-icon">⌘</div>
+          <div>
+            <span class="pill">SCHOOL PROJECT</span>
+            <h3>Student Portfolio Website</h3>
+            <p>
+              Creating a personal website to present my background,
+              education, interests, and technical skills while
+              practicing HTML, CSS, JavaScript, and JSON.
             </p>
-            <img id="aboutPhoto"
-                 class="about-photo"
-                 src="https://placehold.co/500x300/fce7d1/8b4513?text=Your+Photo"
-                 alt="Your uploaded photo">
-        </section>
+          </div>
+        </div>
 
-        <section class="card section">
-            <h2>💼 Experience & Projects</h2>
-            <div id="projectsList" class="project-grid"></div>
-        </section>
+        <div class="experience-block">
+          <div class="experience-icon">↗</div>
+          <div>
+            <span class="pill muted-pill">PRACTICAL LEARNING</span>
+            <h3>Teamwork & class activities</h3>
+            <p>
+              Participating in school activities, collaborating
+              with classmates, and learning to solve problems
+              through communication and shared ideas.
+            </p>
+          </div>
+        </div>
 
-        <section class="card section">
-            <h2>✨ Skills & Interests</h2>
-            <div id="skillsList" class="skills-list"></div>
-        </section>
+        <p class="note">
+          Edit these descriptions to match your actual experience.
+        </p>
+      </article>
 
-        <section class="card contact-section">
-            <h2>☎️ Let's Connect</h2>
-            <p>Feel free to contact me for school projects and collaboration.</p>
-            <a id="contactLink" class="button" href="mailto:jhayrancell@gmail.com">
-                ✉️ Send Me an Email
-            </a>
-        </section>
-    </main>
+      <article class="panel section-card skills-card" id="skills">
+        <div class="section-heading">
+          <span class="section-number">04 / SKILLS & INTERESTS</span>
+          <span class="section-symbol">✧</span>
+        </div>
+
+        <h2>Things I'm <span class="orange-text">exploring.</span></h2>
+
+        <p class="body-copy">
+          Skills I'm developing and interests that motivate me
+          to keep learning.
+        </p>
+
+        <div class="skill-list">
+          <div class="skill-row">
+            <div><span>HTML & CSS</span><span>Web design</span></div>
+            <div class="skill-track"><span style="width:72%"></span></div>
+          </div>
+
+          <div class="skill-row">
+            <div><span>JavaScript</span><span>Web interactivity</span></div>
+            <div class="skill-track"><span style="width:52%"></span></div>
+          </div>
+
+          <div class="skill-row">
+            <div><span>Java</span><span>Programming</span></div>
+            <div class="skill-track"><span style="width:48%"></span></div>
+          </div>
+
+          <div class="skill-row">
+            <div><span>Teamwork & communication</span><span>Collaboration</span></div>
+            <div class="skill-track"><span style="width:78%"></span></div>
+          </div>
+
+          <div class="skill-row">
+            <div><span>Creative design</span><span>Visual ideas</span></div>
+            <div class="skill-track"><span style="width:65%"></span></div>
+          </div>
+        </div>
+
+        <div class="interest-tags">
+          <span>Technology</span>
+          <span>Websites</span>
+          <span>Computers</span>
+          <span>Creative Design</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing panel">
+      <div>
+        <span class="section-number">WHAT'S NEXT?</span>
+        <h2>Always learning. <span class="orange-text">Always growing.</span></h2>
+        <p>Every project is a chance to learn something new.</p>
+      </div>
+      <a class="button" href="mailto:jhayrancell@gmail.com">
+        Say hello <span>↗</span>
+      </a>
+      <span class="closing-leaf">🍁</span>
+    </section>
 
     <footer>
-        <p>Made with 🍁 by <span id="footerName">Jhay Rancell</span></p>
-        <p>Personal Student Portfolio • 2026</p>
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">🍁</span>
+        <span>JRP<span class="brand-dot">.</span></span>
+      </a>
+      <p>Made with <span class="orange-text">♥</span> · Personal Portfolio · 2026</p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
     </footer>
+  </main>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+              </html>
+              
