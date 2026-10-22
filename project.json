@@ -1,12 +1,13 @@
-
 {
   "name": "Jhay Rancell B. Pudunan",
-  "course": "BS Information Technology • NVSU Bambang",
+  "course": "BS Information Technology",
+  "school": "Nueva Vizcaya State University",
   "location": "Aliaga, Nueva Vizcaya",
   "displayLocation": "Bambang, Nueva Vizcaya",
-  "email": "jhayrancell@gmail.com",
   "phone": "+63 9612930807",
-  "about": "Hello! I am Jhay Rancell B. Pudunan, a student who enjoys learning new things, exploring technology, and improving my skills. I am interested in designing, creating websites, and working with computers.",
+  "email": "jhayrancell@gmail.com",
+  "profileImage": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=700&q=85",
+  "theme": "orange",
   "education": [
     {
       "level": "Elementary",
@@ -19,21 +20,12 @@
     {
       "level": "Tertiary",
       "school": "Nueva Vizcaya State University",
-      "course": "Bachelor of Science in Information Technology"
-    }
-  ],
-  "projects": [
-    {
-      "title": "Experience or Part-time Work",
-      "description": "Describe your work experience, responsibilities, tasks, and the skills you learned."
-    },
-    {
-      "title": "School Project",
-      "description": "Describe a school project, group activity, or website you created and explain what you contributed."
+      "course": "Information Technology"
     }
   ],
   "skills": [
     "HTML & CSS",
+    "JavaScript",
     "Java",
     "Database",
     "Teamwork",
